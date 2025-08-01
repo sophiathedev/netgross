@@ -1,0 +1,21 @@
+inherit_gem:
+  rubocop-rails-omakase: rubocop.yml
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: no_space
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always
+  SupportedStyles:
+    - always
+    - comment_only
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
