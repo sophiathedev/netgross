@@ -31,9 +31,7 @@ class TaxCalculatorController < ApplicationController
     end
 
     respond_to do |format|
-      format.turbo_stream do
-        Rails.logger.info "Rendering turbo_stream for calculate action with result: #{@result.present?}"
-      end
+      format.turbo_stream
       format.html { render :index }
     end
   end
